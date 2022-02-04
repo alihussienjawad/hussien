@@ -1,0 +1,327 @@
+<!DOCTYPE html >
+<html lang="en" style="font-size: 62.5%;">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysigt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/vivify.min.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart2 ">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            </span>
+            <h2 class="vivify jumpInRight"> your cart</h2>
+            <div class="products-incart">
+
+            </div>
+
+
+            <div class="cart-footer">
+                <h3>your total : $<span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of cart -->
+
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo"><span>MF-MODE</span></a>
+
+        <nav class="navbar  ">
+            <a id="link" href="#home">الصفة الرئيسية</a>
+            <a href="#products">handla</a>
+            <a href="#about">عن الشركة</a>
+            <a href="#review">våra kunder</a>
+            <a href="#contact">kontakta oss </a>
+            <div class="input-search">
+            <i class="fas fa-search"></i>
+            <input type="text" data-reactid="" placeholder="Search for products, brands and more">
+            </div>
+        </nav>
+
+        <div class="icons">
+            <a class="fas fa-heart"><span id="heart_no"></span></a>
+            <a class="fas fa-shopping-cart" onclick="showCart()"><span class="cart_no"id="cart_no"></span></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+
+
+
+    <!-- Home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3 class="vivify fadeInTop duration 6000">MF-MODE</h3>
+            <span>VINTER2021</span>
+            <p class="vivify fadeInLeft duration 4000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore
+                assumenda iste voluptate dolorem pariatur.</p>
+            <a href="#" class="btn vivify fadeInBottom duration 6000">handla nu </a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+    <!-- prodcuts section starts  -->
+   
+    <section class="products" id="products">
+        <h2 class="h2">Products</h2>
+        <div class="box-container">
+        <!-- the products -->
+        </div>
+    </section>
+
+    <!-- prodcuts section ends -->
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+     <h2 class="h2">om oss </h2> 
+
+        <div class="row">
+
+            <div class="video-container">
+                <video src="images/abutus-vid.MP4" loop autoplay muted></video>
+                <h3>2021</h3>
+            </div>
+
+            <div class="content">
+                <h3>varför oss</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis
+                    perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat
+                    illum, unde optio temporibus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni
+                    quia molestias perspiciatis, unde repudiandae quidem.</p>
+                <a href="#" class="btn">läsa mer</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- icons section starts  -->
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <img src="images/icon-1.png" alt="">
+            <div class="info">
+                <h3>fri frakt</h3>
+                <span>t.o.m 10/Nov</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-2.png" alt="">
+            <div class="info">
+                <h3>14dagar Öppetköp</h3>
+                <span> 4-7 vardagar</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-3.png" alt="">
+            <div class="info">
+                <h3>skicka present</h3>
+                <span>sprida glädje</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-4.png" alt="">
+            <div class="info">
+                <h3>betalning</h3>
+                <span>betala med</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- icons section ends -->
+
+
+
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h2 class="h2"> våra kunder </h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium
+                    enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam
+                    nesciunt eaque nulla dignissimos.</p>
+                <div class="user">
+                    <img src="images/Big Shoulder Long Blazer.jpg" alt="">
+                    <div class="user-info">
+                        <h3>johan</h3>
+                        <span>supper nojd</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium
+                    enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam
+                    nesciunt eaque nulla dignissimos.</p>
+                <div class="user">
+                    <img src="images/Brushed Belted Jacket.jpg" alt="">
+                    <div class="user-info">
+                        <h3>clara</h3>
+                        <span>nöjd kund</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium
+                    enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam
+                    nesciunt eaque nulla dignissimos.</p>
+                <div class="user">
+                    <img src="images/Brushed Belted Jacket.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Erik</h3>
+                        <span>Utmärkt</span>
+                    </div>
+                </div>
+                <span class=""></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="h2">  Kontakta oss</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" placeholder="namn" class="box">
+                <input type="email" placeholder="epost" class="box">
+                <input type="number" placeholder="telnummer" class="box">
+                <textarea name="" class="box" placeholder="meddelande" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="skicka" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="images/Oversized PU Jacket.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>snabbt</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra</h3>
+                <a href="#">min konto</a>
+                <a href="#">min order</a>
+                <a href="#">min favorit</a>
+            </div>
+
+            <div class="box">
+                <h3>Platser</h3>
+                <a href="#">Sokholm</a>
+                <a href="#">Göteborg</a>
+                <a href="#">Malmö</a>
+                <a href="#">Ystad</a>
+            </div>
+
+            <div class="box">
+                <h3>عن المبرمج</h3>
+                <a href="#">07830608733</a>
+                <a href="#">hussien455@gmail.com</a>
+                <a href="#">العراق - بغداد</a>
+                <img src="" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> Created By <span> </span> |hussien </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
